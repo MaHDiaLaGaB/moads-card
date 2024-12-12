@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-import { Heading, Text, Flex, Button, Icon, InlineCode, User, LetterFx, Arrow, Avatar, Tag, SmartImage } from '@/once-ui/components';
+import { Heading, Text, Flex, Button, GlitchFx, InlineCode, LetterFx, Arrow, Tag, SmartImage } from '@/once-ui/components';
 import Link from 'next/link';
 
 export default function Home() {
@@ -66,22 +66,24 @@ export default function Home() {
 							<Text>
 								Founder & FullStack Wizard: Crafting Seamless Experiences and Transformative Tech
 							</Text>
-							<Flex direction="row" gap="8">
-								<Tag variant="accent" size="m" label="Backend" />
-								<Tag variant="danger" size="m" label="Frontend" />
-								<Tag variant="gradient" size="m" label="AI" />
-								<Tag variant="success" size="m" label="GIS" />
-							</Flex>
-							<Flex direction="column" gap="8" marginTop="16">
-								<Heading variant="body-strong-m">Stuff I Like</Heading>
+							<GlitchFx>
 								<Flex direction="row" gap="8">
-									<Tag variant="info" size="m" label="Football" />
-									<Tag variant="warning" size="m" label="Technology" />
+									<Tag variant="accent" size="m" label="Backend" />
+									<Tag variant="danger" size="m" label="Frontend" />
+									<Tag variant="gradient" size="m" label="AI" />
+									<Tag variant="success" size="m" label="GIS" />
 								</Flex>
-							</Flex>
+								<Flex direction="column" gap="8" marginTop="16">
+									<Heading variant="body-strong-m">Stuff I Like</Heading>
+									<Flex direction="row" gap="8">
+										<Tag variant="info" size="m" label="Football" />
+										<Tag variant="warning" size="m" label="Technology" />
+									</Flex>
+								</Flex>
+							</GlitchFx>
 							<Button
 								id="readDocs"
-								href=""
+								onClick={() => window.open("https://www.hypervizion.ly/", '_blank', 'noopener,noreferrer')}
 								variant="secondary">
 								<Flex alignItems="center">
 									To HyperVizion
@@ -111,7 +113,7 @@ export default function Home() {
 					<Button
 						href=""
 						prefixIcon="x" size="s" variant="tertiary">
-						@Moad
+						@moad1333408
 					</Button>
 				</Flex>
 			</Flex>
